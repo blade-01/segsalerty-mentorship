@@ -1,21 +1,26 @@
-<script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+  <div
+    class="bg-bg h-screen w-screen flex justify-center items-center flex-col overflow-hidden"
+  >
+    <qr-card />
+    <attribution />
+  </div>
 </template>
-
+<script>
+import QrCard from "./components/QrCard.vue";
+import Attribution from "./components/Attribution.vue";
+export default {
+  components: {
+    QrCard,
+    Attribution,
+  },
+};
+</script>
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+body {
+  /* font-family: "Outfit", sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
