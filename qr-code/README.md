@@ -6,11 +6,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://qrcode.vercel.app/">
+    <a href="https://qr-codee.netlify.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/blade-01/qrcode">
+    <a href="https://github.com/blade-01/frontend-mentor/tree/qr-code">
       Code
     </a>
   </h3>
@@ -76,3 +76,4 @@ $ yarn lint
 - Website - [Animashaun Taofiq T.](https://www.github.com/blade-01)
 - LinkedIn - [Animashaun Taofiq T.](https://www.linkedin.com/in/animashaun-taofiq/)
 - Twitter - [@dr_annys](https://www.twitter.com/dr_annys)
+
