@@ -1,5 +1,7 @@
 <template>
-  <div class="flex justify-between items-center text-black dark:text-white">
+  <div
+    class="flex justify-between items-center text-black dark:text-white mx-1"
+  >
     <h1 class="text-2xl font-bold">devprofile</h1>
     <div>
       <input

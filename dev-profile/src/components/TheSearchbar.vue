@@ -1,7 +1,7 @@
 <template>
   <small :class="{ err: errorMssg }" v-if="errorMssg">{{ errorMssg }}</small>
   <form
-    class="bg-white dark:bg-card flex justify-between items-center rounded-lg relative my-4 p-2 shadow-md"
+    class="bg-white dark:bg-card flex justify-between items-center rounded-lg relative my-4 mx-1 p-2 shadow-md"
     @submit.prevent="fetchUserDetails"
   >
     <span
