@@ -79,4 +79,4 @@ $ yarn lint
 
 - Website - [Animashaun Taofiq T.](https://www.github.com/blade-01)
 - LinkedIn - [Animashaun Taofiq T.](https://www.linkedin.com/in/animashaun-taofiq/)
-- Twitter - [@dr_annys](https://www.twitter.com/dr_annys)
+- Twitter - [@blade_vue](https://www.twitter.com/blade_vue)
