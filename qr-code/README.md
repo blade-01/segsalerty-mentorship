@@ -57,7 +57,10 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/blade-01/frontend-mentor/tree/qr-code.git
+$ git clone https://github.com/blade-01/frontend-mentor.git
+
+# Change directory
+$ cd qr-code
 
 # Project setup
 $ yarn
@@ -77,4 +80,3 @@ $ yarn lint
 - Website - [Animashaun Taofiq T.](https://www.github.com/blade-01)
 - LinkedIn - [Animashaun Taofiq T.](https://www.linkedin.com/in/animashaun-taofiq/)
 - Twitter - [@dr_annys](https://www.twitter.com/dr_annys)
-
