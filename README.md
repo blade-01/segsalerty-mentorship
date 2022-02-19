@@ -6,11 +6,11 @@
 
 <div align="center">
   <h3>
-    <!-- <a href="">
+    <a href="https://dev-perfil.netlify.app/">
       Demo
     </a>
-    <span> | </span> -->
-    <a href="https://github.com/blade-01/devprofile">
+    <span> | </span>
+    <a href="https://github.com/blade-01/segsalerty-mentorship/tree/dev-profile">
       Code
     </a>
   </h3>

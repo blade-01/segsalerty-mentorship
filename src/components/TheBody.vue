@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white dark:bg-card rounded-lg mt-4 p-5 shadow-md lg:flex">
+  <div class="bg-white dark:bg-card rounded-lg my-4 mx-1 p-5 shadow-md lg:flex">
     <figure>
       <img
         :src="getProfile.avatar_url"
