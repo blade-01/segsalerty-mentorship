@@ -28,7 +28,7 @@
       </div>
       <div class="bio">
         <p :class="{ nil: !getProfile.bio }">
-          {{ getProfile.bio ? getProfile.bio : "This profile has no bio" }}
+          {{ getProfile.bio ? getProfile.bio : 'This profile has no bio' }}
         </p>
       </div>
       <div
@@ -36,15 +36,16 @@
       >
         <div class="stat">
           <p class="font-extralight mb-1">Repos</p>
-          <p class="title-text">28</p>
+          <p class="title-text">{{ getProfile.public_repos }}</p>
         </div>
         <div class="stat">
           <p class="font-extralight mb-1">Followers</p>
-          <p class="title-text">32</p>
+          <p class="title-text">{{ getProfile.followers }}/p></p>
         </div>
+
         <div class="stat">
           <p class="font-extralight mb-1">Following</p>
-          <p class="title-text">60</p>
+          <p class="title-text">{{ getProfile.following }}</p>
         </div>
       </div>
       <div class="icons md:grid md:grid-cols-2">
@@ -66,7 +67,7 @@
             >{{
               getProfile.twitter_username
                 ? `@${getProfile.twitter_username}`
-                : "Not available"
+                : 'Not available'
             }}</a
           >
         </p>
@@ -80,25 +81,25 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
-import moment from "moment";
+import { mapGetters } from 'vuex'
+import moment from 'moment'
 export default {
-  name: "TheBody",
+  name: 'TheBody',
   data() {
     return {
-      searchParam: "",
-    };
+      searchParam: ''
+    }
   },
   methods: {
     formatDate(date) {
-      return moment(date).format("D MMM YYYY");
+      return moment(date).format('D MMM YYYY')
     },
     responseType(response) {
-      return response ? response : "Not available";
-    },
+      return response ? response : 'Not available'
+    }
   },
   computed: {
-    ...mapGetters(["getProfile"]),
-  },
-};
+    ...mapGetters(['getProfile'])
+  }
+}
 </script>
