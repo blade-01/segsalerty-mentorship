@@ -40,7 +40,7 @@
         </div>
         <div class="stat">
           <p class="font-extralight mb-1">Followers</p>
-          <p class="title-text">{{ getProfile.followers }}/p></p>
+          <p class="title-text">{{ getProfile.followers }}</p>
         </div>
 
         <div class="stat">
@@ -55,15 +55,17 @@
         </p>
         <p :class="{ nil: !getProfile.blog }" class="mb-8">
           <span class="mr-3 mdi mdi-link-variant"></span>
-          <a :href="getProfile.blog" target="_blank">{{
-            responseType(getProfile.blog)
-          }}</a>
+          <a>{{ responseType(getProfile.blog) }}</a>
         </p>
         <p :class="{ nil: !getProfile.twitter_username }" class="mb-8">
           <span class="mr-3 mdi mdi-twitter"></span>
           <a
-            :href="`https://twitter.com/${getProfile.twitter_username}`"
-            target="_blank"
+            :href="
+              getProfile.twitter_username
+                ? `https://twitter.com/${getProfile.twitter_username}`
+                : '#'
+            "
+            :target="linkRedirect(getProfile.twitter_username)"
             >{{
               getProfile.twitter_username
                 ? `@${getProfile.twitter_username}`
@@ -73,7 +75,9 @@
         </p>
         <p :class="{ nil: !getProfile.company }" class="mb-8">
           <span class="mr-3 mdi mdi-domain"></span>
-          <a href="#" target="_blank">{{ responseType(getProfile.company) }}</a>
+          <a :target="linkRedirect(getProfile.company)">{{
+            responseType(getProfile.company)
+          }}</a>
         </p>
       </div>
     </main>
@@ -96,6 +100,9 @@ export default {
     },
     responseType(response) {
       return response ? response : 'Not available'
+    },
+    linkRedirect(link) {
+      return link ? '_blank' : ''
     }
   },
   computed: {
