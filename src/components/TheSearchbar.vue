@@ -16,33 +16,33 @@
     <input
       type="submit"
       value="Search"
-      class="text-white bg-btn rounded-lg px-4 py-3 text-sm ml-1 basis-1/4 md:basis-1/6 font-bold md:tracking-widest cursor-pointer"
+      class="text-white bg-btn rounded-lg px-4 py-3 text-sm ml-1 basis-1/5 md:basis-1/6 font-bold md:tracking-widest cursor-pointer"
     />
   </form>
 </template>
 
 <script>
-import { mapActions, mapGetters } from "vuex";
+import { mapActions, mapGetters } from 'vuex'
 export default {
-  name: "TheSearchbar",
+  name: 'TheSearchbar',
   data() {
     return {
-      searchParam: "",
-    };
+      searchParam: ''
+    }
   },
   methods: {
-    ...mapActions(["fetchProfile"]),
+    ...mapActions(['fetchProfile']),
     fetchUserDetails() {
-      this.fetchProfile(this.searchParam);
-      this.searchParam = "";
-    },
+      this.fetchProfile(this.searchParam)
+      this.searchParam = ''
+    }
   },
   computed: {
-    ...mapGetters(["errorMssg"]),
+    ...mapGetters(['errorMssg'])
   },
   mounted() {
-    this.searchParam = "blade-01";
-    this.fetchUserDetails();
-  },
-};
+    this.searchParam = 'blade-01'
+    this.fetchUserDetails()
+  }
+}
 </script>

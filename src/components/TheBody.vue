@@ -28,7 +28,7 @@
       </div>
       <div class="bio">
         <p :class="{ nil: !getProfile.bio }">
-          {{ getProfile.bio ? getProfile.bio : "This profile has no bio" }}
+          {{ getProfile.bio ? getProfile.bio : 'This profile has no bio' }}
         </p>
       </div>
       <div
@@ -36,15 +36,16 @@
       >
         <div class="stat">
           <p class="font-extralight mb-1">Repos</p>
-          <p class="title-text">28</p>
+          <p class="title-text">{{ getProfile.public_repos }}</p>
         </div>
         <div class="stat">
           <p class="font-extralight mb-1">Followers</p>
-          <p class="title-text">32</p>
+          <p class="title-text">{{ getProfile.followers }}</p>
         </div>
+
         <div class="stat">
           <p class="font-extralight mb-1">Following</p>
-          <p class="title-text">60</p>
+          <p class="title-text">{{ getProfile.following }}</p>
         </div>
       </div>
       <div class="icons md:grid md:grid-cols-2">
@@ -54,25 +55,29 @@
         </p>
         <p :class="{ nil: !getProfile.blog }" class="mb-8">
           <span class="mr-3 mdi mdi-link-variant"></span>
-          <a :href="getProfile.blog" target="_blank">{{
-            responseType(getProfile.blog)
-          }}</a>
+          <a>{{ responseType(getProfile.blog) }}</a>
         </p>
         <p :class="{ nil: !getProfile.twitter_username }" class="mb-8">
           <span class="mr-3 mdi mdi-twitter"></span>
           <a
-            :href="`https://twitter.com/${getProfile.twitter_username}`"
-            target="_blank"
+            :href="
+              getProfile.twitter_username
+                ? `https://twitter.com/${getProfile.twitter_username}`
+                : '#'
+            "
+            :target="linkRedirect(getProfile.twitter_username)"
             >{{
               getProfile.twitter_username
                 ? `@${getProfile.twitter_username}`
-                : "Not available"
+                : 'Not available'
             }}</a
           >
         </p>
         <p :class="{ nil: !getProfile.company }" class="mb-8">
           <span class="mr-3 mdi mdi-domain"></span>
-          <a href="#" target="_blank">{{ responseType(getProfile.company) }}</a>
+          <a :target="linkRedirect(getProfile.company)">{{
+            responseType(getProfile.company)
+          }}</a>
         </p>
       </div>
     </main>
@@ -80,25 +85,28 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
-import moment from "moment";
+import { mapGetters } from 'vuex'
+import moment from 'moment'
 export default {
-  name: "TheBody",
+  name: 'TheBody',
   data() {
     return {
-      searchParam: "",
-    };
+      searchParam: ''
+    }
   },
   methods: {
     formatDate(date) {
-      return moment(date).format("D MMM YYYY");
+      return moment(date).format('D MMM YYYY')
     },
     responseType(response) {
-      return response ? response : "Not available";
+      return response ? response : 'Not available'
     },
+    linkRedirect(link) {
+      return link ? '_blank' : ''
+    }
   },
   computed: {
-    ...mapGetters(["getProfile"]),
-  },
-};
+    ...mapGetters(['getProfile'])
+  }
+}
 </script>
