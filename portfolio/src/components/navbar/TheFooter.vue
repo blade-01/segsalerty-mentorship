@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-mainBg routes text-white py-8">
+  <footer class="bg-mainBg text-white py-8">
     <div class="container">
       <div
         class="flex justify-center items-center flex-col md:flex-row md:justify-between md:items-start py-8 text-center md:text-left"
@@ -27,7 +27,7 @@
         </ul>
         <ul class="flex justify-between items-center space-x-2">
           <li
-            class="bg-secondary rounded-full p-2"
+            class="bg-secondary rounded-full p-2 cursor-pointer border border-solid border-secondary transition duration-200 ease-in-out hover:border-white"
             v-for="(social, index) in socials"
             :key="index"
           >
