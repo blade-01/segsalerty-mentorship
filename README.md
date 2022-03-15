@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://personal.netlify.app/">
+    <a href="https://blade-personal.netlify.app/">
       Demo
     </a>
     <span> | </span>
