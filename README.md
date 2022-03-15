@@ -32,7 +32,7 @@
 
 ## Overview
 
-<!-- ![banner](./src/assets/dark_theme.png) -->
+![banner](./src/assets/img/screenshot.png)
 
 ### Built With
 
