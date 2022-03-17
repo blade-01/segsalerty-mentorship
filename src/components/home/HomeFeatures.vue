@@ -22,12 +22,13 @@
               <img
                 :src="require(`@/assets/img/${feature.icon}`)"
                 :alt="feature.title"
+                class="w-5 h-5"
               />
               <span class="opacity-80">{{ feature.title }}</span>
             </li>
           </ul>
         </div>
-        <div class="illus md:w-1/2">
+        <div class="illus md:w-1/2 mt-8 md:mt-0">
           <img src="@/assets/img/illus-03.svg" alt="illustration_03" />
         </div>
       </div>
@@ -37,17 +38,17 @@
 
 <script>
 export default {
-  name: 'HomeFeatures',
+  name: "HomeFeatures",
   data() {
     return {
       features: [
-        { icon: 'check.svg', title: 'Range including technical skills' },
-        { icon: 'check.svg', title: 'Business understanding' },
-        { icon: 'check.svg', title: 'Partner on the long run' }
-      ]
-    }
-  }
-}
+        { icon: "check.svg", title: "Range including technical skills" },
+        { icon: "check.svg", title: "Business understanding" },
+        { icon: "check.svg", title: "Partner on the long run" },
+      ],
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped></style>

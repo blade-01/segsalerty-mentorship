@@ -67,13 +67,16 @@ a.route-link.router-link-exact-active {
     height: calc(100% - 80px);
   }
   .work-01 {
-    background: url('./assets/img/work-01.svg') no-repeat center center;
+    background: url("./assets/img/work-01.svg") no-repeat center center;
   }
   .work-02 {
-    background: url('./assets/img/work-02.svg') no-repeat center center;
+    background: url("./assets/img/work-02.svg") no-repeat center center;
   }
   .work-03 {
-    background: url('./assets/img/work-03.svg') no-repeat center center;
+    background: url("./assets/img/work-03.svg") no-repeat center center;
+  }
+  .block-card {
+    background: url("./assets/img/block_path.svg") no-repeat center center;
   }
   .card-height {
     height: 450px;

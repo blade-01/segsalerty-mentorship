@@ -3,11 +3,11 @@
     <div class="container">
       <div class="text-center md:max-w-md m-auto">
         <p class="tag">Service</p>
-        <h3
+        <h2
           class="text-priText text-4xl font-bold lg:text-6xl my-8 leading-snug"
         >
           How I Can Help You With
-        </h3>
+        </h2>
       </div>
       <div class="my-12 grid grid-cols-1 md:grid-cols-2">
         <div
@@ -47,26 +47,26 @@
 
 <script>
 export default {
-  name: 'HomeService',
+  name: "HomeService",
   data() {
     return {
       cards: [
         {
-          img: 'service-design.svg',
-          title: 'Design',
+          img: "service-design.svg",
+          title: "Design",
           content:
-            'Agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.'
+            "Agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
         },
         {
-          img: 'service-development.svg',
-          title: 'Development',
+          img: "service-development.svg",
+          title: "Development",
           content:
-            'Hire to outsource your digital marketing efforts, instead of handling in-house can provide your business.'
-        }
-      ]
-    }
-  }
-}
+            "Hire to outsource your digital marketing efforts, instead of handling in-house can provide your business.",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped></style>

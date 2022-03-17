@@ -4,7 +4,7 @@
       <div class="md:flex justify-between items-end">
         <div>
           <p class="tag mb-4">portfolio</p>
-          <h3 class="capitalize text-4xl lg:text-5xl font-bold">latest work</h3>
+          <h4 class="capitalize text-4xl lg:text-5xl font-bold">latest work</h4>
         </div>
         <button
           class="border border-white rounded-md bg-transparent transition ease-in-out duration-200 hover:bg-white hover:text-priText px-4 py-2 uppercase font-bold mt-4 md:mt-0"
@@ -35,17 +35,17 @@
 
 <script>
 export default {
-  name: 'HomeWork',
+  name: "HomeWork",
   data() {
     return {
       works: [
-        { src: 'work-01', tag: 'Design', title: 'SOFA' },
-        { src: 'work-02', tag: 'Branding', title: 'KeyBoard' },
-        { src: 'work-03', tag: 'Illustration', title: 'Work Media' }
-      ]
-    }
-  }
-}
+        { src: "work-01", tag: "Design", title: "SOFA" },
+        { src: "work-02", tag: "Branding", title: "KeyBoard" },
+        { src: "work-03", tag: "Illustration", title: "Work Media" },
+      ],
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped></style>

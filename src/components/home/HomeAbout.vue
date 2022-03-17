@@ -9,11 +9,11 @@
         </div>
         <div>
           <p class="tag">Gabriel Pires</p>
-          <h3
+          <h5
             class="my-6 font-bold text-5xl leading-snug text-priText lg:max-w-sm mx-0"
           >
             Professional Web Designer
-          </h3>
+          </h5>
           <p class="text-priText text-xl mb-3">Provides a full service range</p>
           <p class="max-w-md leading-8 text-secText">
             Ability to put themselves in the merchant's shoes. It is meant to
@@ -21,7 +21,7 @@
             team.
           </p>
           <button
-            class="bg-white font-bold text-priText text-sm uppercase px-4 py-2 rounded-md mt-8 shadow-md"
+            class="bg-white font-bold text-priText text-sm uppercase px-5 py-3 rounded-md mt-8 shadow-md"
           >
             About Me
           </button>
@@ -44,9 +44,9 @@
               </figure>
             </div>
             <div>
-              <h3 class="font-bold text-4xl text-priText mb-2">
+              <h6 class="font-bold text-4xl text-priText mb-2">
                 {{ about.title }}
-              </h3>
+              </h6>
               <p class="text-priText text-xl">{{ about.content }}</p>
             </div>
           </div>
@@ -58,24 +58,24 @@
 
 <script>
 export default {
-  name: 'HomeAbout',
+  name: "HomeAbout",
   data() {
     return {
       abouts: [
         {
-          img: 'service-calender.svg',
-          title: '42%',
-          content: 'Years of experience'
+          img: "service-calender.svg",
+          title: "42%",
+          content: "Years of experience",
         },
         {
-          img: 'service-development.svg',
-          title: '73+',
-          content: 'Projects Done'
-        }
-      ]
-    }
-  }
-}
+          img: "service-development.svg",
+          title: "73+",
+          content: "Projects Done",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped></style>
