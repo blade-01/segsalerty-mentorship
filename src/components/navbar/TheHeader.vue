@@ -4,7 +4,7 @@
   >
     <div class="container">
       <div class="flex justify-between items-center">
-        <router-link :to="{ name: 'home' }"
+        <router-link to="/"
           ><img
             src="@/assets/img/logo.png"
             alt="logo"
@@ -53,38 +53,38 @@
 
 <script>
 export default {
-  name: 'TheHeader',
+  name: "TheHeader",
   data() {
     return {
       routes: [
         {
-          name: 'services',
-          path: 'services'
+          name: "services",
+          path: "services",
         },
         {
-          name: 'pricing',
-          path: 'pricing'
+          name: "pricing",
+          path: "pricing",
         },
         {
-          name: 'blog',
-          path: 'blog'
-        }
+          name: "blog",
+          path: "blog",
+        },
       ],
-      show: false
-    }
+      show: false,
+    };
   },
   methods: {
     toggleNav() {
-      this.show = !this.show
-    }
+      this.show = !this.show;
+    },
   },
   mounted() {
     // Closes navbar on route change
     this.$router.beforeEach(() => {
-      this.show = false
-    })
-  }
-}
+      this.show = false;
+    });
+  },
+};
 </script>
 
 <style lang="scss" scoped></style>

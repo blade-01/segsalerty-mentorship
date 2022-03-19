@@ -16,6 +16,9 @@ module.exports = {
       fontSize: {
         nl: ["56px", "64px"],
       },
+      screens: {
+        "1xl": "1400px",
+      },
     },
   },
   plugins: [],

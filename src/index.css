@@ -76,7 +76,35 @@ a.route-link.router-link-exact-active {
     background: url("./assets/img/work-03.svg") no-repeat center center;
   }
   .block-card {
-    background: url("./assets/img/block_path.svg") no-repeat center center;
+    background-image: url("./assets/img/block_path.svg");
+    background-size: 100% 85%;
+    background-position: center top 0px;
+    background-repeat: no-repeat;
+  }
+  .get-card {
+    position: relative;
+  }
+  .get-card::before {
+    content: "";
+    position: absolute;
+    top: -110px;
+    left: 0;
+    background: url("./assets/img/star.svg") no-repeat;
+    background-size: 148px;
+    width: 100%;
+    height: 100%;
+  }
+  .get-card::after {
+    content: "";
+    position: absolute;
+    top: -55px;
+    left: 0;
+    background-image: url("./assets/img/gift.svg");
+    background-repeat: no-repeat;
+    background-position: left 55px top 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
   }
   .card-height {
     height: 450px;
