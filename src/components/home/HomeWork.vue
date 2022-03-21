@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-mainBg text-white py-16">
+  <div class="bg-mainBg text-white py-16" id="work">
     <div class="container">
       <div class="md:flex justify-between items-end">
         <div>

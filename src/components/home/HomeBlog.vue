@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-secBg py-16 text-priText">
+  <div class="bg-secBg py-16 text-priText" id="blog">
     <div class="container">
       <div class="md:flex justify-between items-end mb-4">
         <div>

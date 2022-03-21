@@ -1,5 +1,5 @@
 <template>
-  <div class="service bg-secBg py-16">
+  <div class="service bg-secBg py-16" id="services">
     <div class="container">
       <div class="text-center md:max-w-md m-auto">
         <p class="tag">Service</p>

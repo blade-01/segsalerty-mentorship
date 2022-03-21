@@ -13,11 +13,12 @@
             Agency provides a full service range including technical skills,
             design, business understanding.
           </p>
-          <button
-            class="bg-secondary font-bold text-white text-sm uppercase px-4 py-3 border border-solid border-secondary rounded-md mt-8 transition duration-200 hover:bg-white hover:text-secondary hover:border-secondary shadow-md"
+          <a
+            href="#work"
+            class="bg-secondary font-bold text-white text-sm uppercase px-4 py-3 border border-solid border-secondary rounded-md mt-8 transition duration-200 hover:bg-white hover:text-secondary hover:border-secondary shadow-md inline-block"
           >
             See My Work
-          </button>
+          </a>
         </div>
         <div class="illus mb-8 md:mb-0">
           <figure>

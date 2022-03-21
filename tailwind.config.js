@@ -4,7 +4,7 @@ module.exports = {
     extend: {
       colors: {
         darkBorder: "#3A3C56",
-        mainBg: "#2c243c",
+        mainBg: "#28293E",
         secBg: "#FDF0E9",
         secondary: "#EF6D58",
         priText: "#391400",
@@ -21,6 +21,9 @@ module.exports = {
       },
       screens: {
         "1xl": "1400px",
+      },
+      backgroundImage: {
+        map: "url('./assets/img/map.svg')",
       },
     },
   },

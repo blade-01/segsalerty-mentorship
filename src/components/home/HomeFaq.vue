@@ -1,5 +1,5 @@
 <template>
-  <div class="faq bg-mainBg text-white py-16">
+  <div class="faq bg-mainBg text-white py-16" id="pricing">
     <div class="container">
       <div class="md:flex justify-between items-start md:space-x-10">
         <div class="mb-8 md:mb-0 md:max-w-md">

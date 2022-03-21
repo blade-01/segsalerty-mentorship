@@ -4,12 +4,12 @@
   >
     <div class="container">
       <div class="flex justify-between items-center">
-        <router-link to="/"
+        <a href="/"
           ><img
             src="@/assets/img/logo.png"
             alt="logo"
             class="w-28 h-20 object-contain"
-        /></router-link>
+        /></a>
         <nav
           class="fixed h-full w-full top-0 -left-full mt-16 bg-mainBg py-8 lg:relative lg:w-auto lg:left-0 lg:m-0 lg:p-0 lg:bg-inherit transition-all duration-500 capitalize font-normal text-white text-base"
           :class="{ open: show }"
@@ -18,7 +18,7 @@
             class="block text-center lg:flex lg:space-x-4 lg:m-0 lg:items-center"
           >
             <li class="mb-4 lg:m-0 lg:pr-10 mx-auto mt-10">
-              <router-link :to="{ name: 'about' }"> about </router-link>
+              <a href="/about"> about </a>
             </li>
             <li
               class="mb-4 lg:m-0 mx-auto mt-10 lg:pr-10"
