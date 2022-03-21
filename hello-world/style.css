@@ -1,0 +1,21 @@
+.box {
+  position: relative;
+  perspective: 200px;
+  overflow: hidden;
+}
+.box::after {
+  content: "Hello World Hello World Hello World Hello World Hello World Hello World";
+  text-align: center;
+  line-height: 30px;
+  position: absolute;
+  width: 200px;
+  margin: auto;
+  transform: translateY(170px) rotateX(30deg);
+  animation: moveUp 10s linear infinite;
+}
+
+@keyframes moveUp {
+  to {
+    transform: translateY(-170px) rotateX(30deg);
+  }
+}

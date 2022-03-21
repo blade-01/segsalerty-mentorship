@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-monospace bg-light dark:bg-dark p-0 m-0;
+  }
+  h1 {
+    @apply font-ptsans;
+  }
+  p {
+    @apply text-text dark:text-white text-sm lg:text-base;
+  }
+  input {
+    @apply font-monospace;
+  }
+}
+
+.container {
+  @apply w-11/12 md:max-w-screen-sm m-auto overflow-hidden;
+}
+
+.title-text {
+  @apply text-title dark:text-white font-semibold;
+}
+
+.input-style {
+  @apply focus:border-dashed focus:border-2 focus:border-link focus:dark:border-btn border-2 border-transparent outline-none py-2 bg-none text-text dark:text-white bg-inherit pl-7 placeholder:text-xs placeholder:text-text placeholder:dark:text-white basis-4/5 md:basis-4/5;
+}
+
+.nil {
+  @apply text-nil dark:text-nil;
+}
+
+.err {
+  @apply absolute top-0 left-1/2 transform -translate-x-1/2 text-white dark:text-white bg-red-400 px-2 py-4 rounded-b-lg animate-pulse text-center;
+}
