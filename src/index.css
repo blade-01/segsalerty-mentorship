@@ -1,0 +1,177 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-epilogue text-base font-normal;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  *,
+  *::before,
+  *::after {
+    @apply m-0 p-0 box-border;
+  }
+}
+a.router-link-exact-active {
+  @apply text-gray-600;
+}
+a.route-link.router-link-exact-active {
+  @apply bg-white text-blue-900 p-3 rounded-lg;
+}
+@layer components {
+  .container {
+    @apply w-11/12 md:w-4/5 lg:w-4/5 2xl:w-8/12 m-auto;
+  }
+  .routes {
+    @apply mt-20;
+  }
+  .contact_btn {
+    @apply font-bold text-white uppercase border border-solid border-gray-400 rounded-md bg-mainBg hover:bg-white hover:text-mainBg transition-all text-sm;
+  }
+  .toggler {
+    @apply w-5 bg-white h-0.5 mb-1 transition ease-in-out duration-500;
+  }
+  .change .toggler:nth-child(1) {
+    transform: translate(1px, 6px) rotate(45deg);
+  }
+  .change .toggler:nth-child(2) {
+    @apply opacity-0;
+  }
+  .change .toggler:nth-child(3) {
+    transform: translate(0px, -6px) rotate(-45deg);
+  }
+  .label-style {
+    @apply block mb-2 text-gray-600;
+  }
+  .input-style {
+    @apply border-solid border-gray-300 border outline-none rounded-md p-2 focus:border-gray-600 w-full transition-all duration-200 ease-in-out;
+  }
+  .err {
+    @apply border-solid border border-blue-900 mb-2 !important;
+  }
+  .err-message {
+    @apply text-blue-900;
+  }
+  .tag {
+    @apply text-secondary uppercase;
+  }
+  .input-style {
+    @apply bg-white border border-border text-priText text-sm px-5 py-3 rounded-md w-full placeholder-secText;
+  }
+}
+@layer utilities {
+  .open {
+    @apply left-0 lg:left-0;
+  }
+  .sidebarShow {
+    @apply left-0;
+  }
+  .height {
+    height: calc(100% - 80px);
+  }
+  .work-01 {
+    background: url("./assets/img/work-01.svg") no-repeat center center;
+  }
+  .work-02 {
+    background: url("./assets/img/work-02.svg") no-repeat center center;
+  }
+  .work-03 {
+    background: url("./assets/img/work-03.svg") no-repeat center center;
+  }
+  .block-card {
+    background-image: url("./assets/img/block_path.svg");
+    background-size: 100% 85%;
+    background-position: center top 0px;
+    background-repeat: no-repeat;
+  }
+  .get-card {
+    position: relative;
+  }
+  .get-card::before {
+    content: "";
+    position: absolute;
+    top: -110px;
+    left: 0;
+    background: url("./assets/img/star.svg") no-repeat;
+    background-size: 148px;
+    width: 100%;
+    height: 100%;
+  }
+  .get-card::after {
+    content: "";
+    position: absolute;
+    top: -55px;
+    left: 0;
+    background-image: url("./assets/img/gift.svg");
+    background-repeat: no-repeat;
+    background-position: left 55px top 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+  .card-height {
+    height: 450px;
+  }
+  .left-align {
+    left: 10%;
+  }
+  .vid {
+    position: relative;
+  }
+  .vid::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("./assets/img/play.svg") no-repeat center center;
+    content: "";
+  }
+  .time {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .founder {
+    background: url("./assets/img/apostrophe.svg") no-repeat top 10px right 0px;
+  }
+  .map {
+    background: url("./assets/img/map.svg") no-repeat center center/cover;
+  }
+  @screen md {
+    .height {
+      height: calc(100% - 80px);
+    }
+    .blogs {
+      grid-template-areas:
+        "blog-1 blog-1 blog-2"
+        "blog-1 blog-1 blog-3";
+    }
+    .blog-1 img {
+      width: 770px;
+      height: auto;
+    }
+    .blog-1 {
+      grid-area: blog-1;
+    }
+    .blog-1 p {
+      width: 500px;
+    }
+    .blog-2 {
+      grid-area: blog-2;
+    }
+    .blog-3 {
+      grid-area: blog-3;
+    }
+    .founder {
+      background: url("./assets/img/apostrophe.svg") no-repeat top 10px right
+        100px;
+    }
+  }
+  @screen lg {
+    .height {
+      height: calc(100vh - 80px);
+    }
+  }
+}
