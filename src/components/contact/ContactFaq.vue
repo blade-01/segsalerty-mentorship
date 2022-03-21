@@ -1,5 +1,5 @@
 <template>
-  <div class="faq bg-mainBg text-white py-16" id="pricing">
+  <div class="faq bg-cardBg text-priText py-16" id="pricing">
     <div class="container">
       <div class="md:flex justify-between items-start md:space-x-10">
         <div class="mb-8 md:mb-0 md:max-w-md">
@@ -9,7 +9,7 @@
           >
             Frequently Asked Questions
           </p>
-          <p class="text-lightWhite mb-4">
+          <p class="text-secText mb-4">
             A digital agency is a business you hire to outsource your digital
             marketing efforts, instead of handling in-house.
           </p>
@@ -19,11 +19,11 @@
           <div
             v-for="faq in faqs"
             :key="faq.id"
-            class="border border-solid border-darkBorder py-4"
+            class="border border-solid border-border py-4"
             :class="faq.id === selectedId ? 'bg-white' : ''"
           >
             <div
-              class="flex justify-between items-center p-4 text-white cursor-pointer"
+              class="flex justify-between items-center p-4 cursor-pointer"
               @click="selected(faq.id)"
               :class="faq.id === selectedId ? 'text-priText' : ''"
             >
@@ -42,15 +42,6 @@
             >
               <p class="text-secText">{{ faq.answer }}</p>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="text-center mt-10">
-        <div
-          class="grid grid-cols-2 md:grid-cols-5 gap-10 items-center justify-center self-center justify-self-center"
-        >
-          <div v-for="(comp, index) in comps" :key="comp.src">
-            <img :src="require(`@/assets/img/${comp.src}`)" :alt="index" />
           </div>
         </div>
       </div>

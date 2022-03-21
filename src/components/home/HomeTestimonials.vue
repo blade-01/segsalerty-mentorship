@@ -7,7 +7,7 @@
       >
         What My Clients Are Saying
       </p>
-      <div class="md:flex items-start mt-4">
+      <div class="md:flex items-start mt-4 mx-auto">
         <div
           v-for="(testimony, index) in testimonials"
           :key="index"
