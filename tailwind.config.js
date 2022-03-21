@@ -3,12 +3,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        mainBg: "#3A3C56",
+        darkBorder: "#3A3C56",
+        mainBg: "#2c243c",
         secBg: "#FDF0E9",
         secondary: "#EF6D58",
         priText: "#391400",
         secText: "rgba(57, 20, 0, 0.64)",
         cardBg: "#f9e5da",
+        border: "#f3d1bf",
+        lightWhite: "rgba(255, 255, 255, 0.64)",
       },
       fontFamily: {
         epilogue: ["Epilogue", "sans-serif"],

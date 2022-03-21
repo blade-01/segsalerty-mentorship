@@ -55,6 +55,9 @@ a.route-link.router-link-exact-active {
   .tag {
     @apply text-secondary uppercase;
   }
+  .input-style {
+    @apply bg-white border border-border text-priText text-sm px-5 py-3 rounded-md w-full placeholder-secText;
+  }
 }
 @layer utilities {
   .open {
@@ -113,6 +116,32 @@ a.route-link.router-link-exact-active {
     left: 10%;
   }
   @screen md {
+    .height {
+      height: calc(100% - 80px);
+    }
+    .blogs {
+      grid-template-areas:
+        "blog-1 blog-1 blog-2"
+        "blog-1 blog-1 blog-3";
+    }
+    .blog-1 img {
+      width: 770px;
+      height: auto;
+    }
+    .blog-1 {
+      grid-area: blog-1;
+    }
+    .blog-1 p {
+      width: 500px;
+    }
+    .blog-2 {
+      grid-area: blog-2;
+    }
+    .blog-3 {
+      grid-area: blog-3;
+    }
+  }
+  @screen lg {
     .height {
       height: calc(100vh - 80px);
     }

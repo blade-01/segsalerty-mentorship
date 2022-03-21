@@ -1,5 +1,5 @@
 <template>
-  <div class="home-main flex routes py-8 md:p-0 height bg-mainBg text-white">
+  <div class="home-main flex routes py-8 lg:p-0 height bg-mainBg text-white">
     <div class="container">
       <div
         class="flex justify-between items-center flex-col-reverse md:flex-row"
@@ -31,8 +31,8 @@
 
 <script>
 export default {
-  name: 'HomeMain'
-}
+  name: "HomeMain",
+};
 </script>
 
 <style lang="scss" scoped></style>

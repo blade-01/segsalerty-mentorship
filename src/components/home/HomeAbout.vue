@@ -29,7 +29,7 @@
       </div>
       <div class="my-12 grid grid-cols-1 md:grid-cols-2 mt-28">
         <div
-          class="border border-solid border-secondary p-8"
+          class="border border-solid border-border p-8"
           v-for="(about, index) in abouts"
           :key="index"
         >

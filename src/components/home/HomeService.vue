@@ -11,7 +11,7 @@
       </div>
       <div class="my-12 grid grid-cols-1 md:grid-cols-2">
         <div
-          class="border border-solid border-secondary p-6"
+          class="border border-solid border-border p-6"
           v-for="(card, index) in cards"
           :key="index"
         >
