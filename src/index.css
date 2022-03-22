@@ -143,6 +143,15 @@ a.route-link.router-link-exact-active {
     .height {
       height: calc(100% - 80px);
     }
+    .founder {
+      background: url("./assets/img/apostrophe.svg") no-repeat top 10px right
+        100px;
+    }
+  }
+  @screen lg {
+    .height {
+      height: calc(100vh - 80px);
+    }
     .blogs {
       grid-template-areas:
         "blog-1 blog-1 blog-2"
@@ -163,15 +172,6 @@ a.route-link.router-link-exact-active {
     }
     .blog-3 {
       grid-area: blog-3;
-    }
-    .founder {
-      background: url("./assets/img/apostrophe.svg") no-repeat top 10px right
-        100px;
-    }
-  }
-  @screen lg {
-    .height {
-      height: calc(100vh - 80px);
     }
   }
 }
