@@ -158,20 +158,20 @@ a.route-link.router-link-exact-active {
         "blog-1 blog-1 blog-3";
     }
     .blog-1 img {
-      width: 770px;
-      height: auto;
+      width: 770px !important;
+      height: auto !important;
     }
     .blog-1 {
-      grid-area: blog-1;
+      grid-area: blog-1 !important;
     }
     .blog-1 p {
-      width: 500px;
+      width: 500px !important;
     }
     .blog-2 {
-      grid-area: blog-2;
+      grid-area: blog-2 !important;
     }
     .blog-3 {
-      grid-area: blog-3;
+      grid-area: blog-3 !important;
     }
   }
 }
