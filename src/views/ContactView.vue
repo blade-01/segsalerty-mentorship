@@ -1,7 +1,7 @@
 <template>
   <div id="contact">
     <the-header />
-    <contact-banner />
+    <page-banner>Contact</page-banner>
     <contact-main />
     <contact-body />
     <contact-faq />
@@ -11,7 +11,7 @@
 
 <script>
 import TheHeader from "@/components/navbar/TheHeader.vue";
-import ContactBanner from "../components/contact/ContactBanner.vue";
+import PageBanner from "../components/reuseables/PageBanner.vue";
 import ContactMain from "../components/contact/ContactMain.vue";
 import ContactBody from "../components/contact/ContactBody.vue";
 import ContactFaq from "../components/contact/ContactFaq.vue";
@@ -20,7 +20,7 @@ export default {
   name: "ContactView",
   components: {
     TheHeader,
-    ContactBanner,
+    PageBanner,
     ContactMain,
     ContactBody,
     ContactFaq,

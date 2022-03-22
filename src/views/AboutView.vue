@@ -1,7 +1,7 @@
 <template>
   <div id="about">
     <the-header />
-    <about-banner />
+    <page-banner>About Me</page-banner>
     <about-main />
     <the-footer />
   </div>
@@ -10,14 +10,14 @@
 <script>
 import TheHeader from "@/components/navbar/TheHeader.vue";
 import TheFooter from "@/components/navbar/TheFooter.vue";
-import AboutBanner from "../components/about/AboutBanner.vue";
+import PageBanner from "../components/reuseables/PageBanner.vue";
 import AboutMain from "../components/about/AboutMain.vue";
 export default {
   name: "AboutView",
   components: {
     TheHeader,
     TheFooter,
-    AboutBanner,
+    PageBanner,
     AboutMain,
   },
 };

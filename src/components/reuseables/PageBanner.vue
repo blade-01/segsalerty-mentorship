@@ -5,7 +5,7 @@
         class="content flex flex-col justify-center items-center md:max-w-xl text-center m-auto"
       >
         <h1 class="mb-6 font-bold text-nl lg:text-7xl leading-snug max-w-3xl">
-          Contact
+          <slot></slot>
         </h1>
         <p class="text-lightWhite leading-8">
           Agency provides a full service range including technical skills,
@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: "AboutBanner",
+  name: "PageBanner",
 };
 </script>
 
