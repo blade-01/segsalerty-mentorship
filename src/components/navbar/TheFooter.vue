@@ -58,59 +58,59 @@
 
 <script>
 export default {
-  name: 'TheFooter',
+  name: "TheFooter",
   data() {
     return {
       menus: [
         {
-          name: 'about',
-          route: 'about'
+          name: "about",
+          route: "about",
         },
         {
-          name: 'services',
-          route: 'services'
+          name: "services",
+          route: "#",
         },
         {
-          name: 'blog',
-          route: 'blog'
+          name: "blog",
+          route: "blog",
         },
         {
-          name: 'contact',
-          route: 'contact'
-        }
+          name: "contact",
+          route: "contact",
+        },
       ],
       services: [
         {
-          name: 'design',
-          route: 'design'
+          name: "design",
+          route: "#",
         },
         {
-          name: 'development',
-          route: 'development'
+          name: "development",
+          route: "#",
         },
         {
-          name: 'marketing',
-          route: 'marketing'
+          name: "marketing",
+          route: "#",
         },
         {
-          name: 'see more',
-          route: 'see more'
-        }
+          name: "see more",
+          route: "#",
+        },
       ],
       socials: [
         {
-          icon: 'contact-facebook.svg'
+          icon: "contact-facebook.svg",
         },
         {
-          icon: 'contact-twitter.svg'
+          icon: "contact-twitter.svg",
         },
         {
-          icon: 'contact-instagram.svg'
-        }
-      ]
-    }
-  }
-}
+          icon: "contact-instagram.svg",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped></style>
