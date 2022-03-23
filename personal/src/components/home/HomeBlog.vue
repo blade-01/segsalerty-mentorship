@@ -29,7 +29,7 @@
             class="my-4 md:h-40"
           />
           <p class="text-xl">{{ blog.category }}</p>
-          <p class="font-bold text-2xl my-4">{{ blog.title }}</p>
+          <p class="font-bold text-2xl my-4 lg:w-72">{{ blog.title }}</p>
           <p class="text-secText">{{ blog.date }}</p>
         </div>
       </div>

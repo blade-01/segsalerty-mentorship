@@ -6,7 +6,7 @@
       >
         <div>
           <p class="tag">Gabriel Pires</p>
-          <h1 class="my-6 font-bold text-nl lg:text-7xl leading-snug max-w-3xl">
+          <h1 class="my-6 font-bold text-nl lg:text-7xl leading-snug max-w-2xl">
             The Simple, Clean Design
           </h1>
           <p class="max-w-md leading-8">
