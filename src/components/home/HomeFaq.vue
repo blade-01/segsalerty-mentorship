@@ -19,11 +19,11 @@
           <div
             v-for="faq in faqs"
             :key="faq.id"
-            class="border border-solid border-darkBorder py-4"
+            class="border border-solid border-darkBorder"
             :class="faq.id === selectedId ? 'bg-white' : ''"
           >
             <div
-              class="flex justify-between items-center p-4 text-white cursor-pointer"
+              class="flex justify-between items-center p-10 text-white cursor-pointer"
               @click="selected(faq.id)"
               :class="faq.id === selectedId ? 'text-priText' : ''"
             >
@@ -33,21 +33,29 @@
               <img
                 src="@/assets/img/down.svg"
                 alt="chevron"
-                :class="faq.id === selectedId ? 'transform rotate-180' : ''"
+                :class="
+                  faq.id === selectedId
+                    ? 'transition-all ease-in-out duration-200 transform rotate-180'
+                    : ''
+                "
               />
             </div>
             <div
-              class="h-0 overflow-hidden bg-white px-4"
-              :class="faq.id === selectedId ? 'h-full' : ''"
+              class="h-0 overflow-hidden bg-white px-10"
+              :class="
+                faq.id === selectedId
+                  ? 'h-64 lg:h-28 transition-all ease-in-out duration-200'
+                  : ''
+              "
             >
               <p class="text-secText">{{ faq.answer }}</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="text-center mt-10">
+      <div class="text-center mt-20">
         <div
-          class="grid grid-cols-2 md:grid-cols-5 gap-10 items-center justify-center self-center justify-self-center"
+          class="grid grid-cols-2 gap-10 md:flex items-center justify-between"
         >
           <div v-for="(comp, index) in comps" :key="comp.src">
             <img :src="require(`@/assets/img/${comp.src}`)" :alt="index" />

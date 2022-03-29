@@ -6,7 +6,7 @@
       >
         <div class="md:w-1/2">
           <p class="tag">Gabriel Pires</p>
-          <h1 class="my-6 font-bold text-5xl lg:text-6xl max-w-xl">
+          <h1 class="my-6 font-bold text-5xl lg:text-6xl max-w-md">
             Help To Build Your Dream Project
           </h1>
           <p class="max-w-md leading-8">

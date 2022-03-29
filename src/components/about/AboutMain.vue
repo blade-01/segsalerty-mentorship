@@ -1,7 +1,9 @@
 <template>
   <div class="pt-16 bg-secBg">
     <div class="container">
-      <img src="@/assets/img/about.svg" alt="about_image" />
+      <div class="flex justify-center">
+        <img src="@/assets/img/about.svg" alt="about_image" />
+      </div>
       <div class="mt-8 md:max-w-xl m-auto">
         <p class="tag">Gabriel Pires</p>
         <h2
@@ -22,17 +24,19 @@
       </div>
       <div class="my-12 grid grid-cols-1 md:grid-cols-2">
         <div
-          class="border border-solid border-border p-8"
+          class="border border-solid border-border p-8 sm:p-10"
           v-for="(about, index) in abouts"
           :key="index"
         >
           <div class="flex justify-start items-center space-x-6">
-            <div class="bg-secondary rounded-full p-4">
+            <div
+              class="bg-secondary rounded-full p-4 xl:p-0 xl:h-28 xl:w-28 flex justify-center items-center"
+            >
               <figure>
                 <img
                   :src="require(`@/assets/img/${about.img}`)"
                   :alt="about.title"
-                  class="h-8 w-8"
+                  class="h-10 w-10 xl:h-12 xl:w-12"
                 />
               </figure>
             </div>
@@ -94,7 +98,7 @@
 
       <div class="text-center mb-28">
         <div
-          class="grid grid-cols-2 md:grid-cols-5 gap-10 items-center justify-center self-center justify-self-center"
+          class="grid grid-cols-2 gap-10 md:flex items-center justify-between"
         >
           <div v-for="(comp, index) in comps" :key="comp.src">
             <img :src="require(`@/assets/img/${comp.src}`)" :alt="index" />

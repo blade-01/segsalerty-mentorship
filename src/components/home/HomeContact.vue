@@ -2,7 +2,10 @@
   <div class="bg-mainBg py-16 text-priText">
     <div class="container">
       <div class="md:flex justify-between items-center space-x-5">
-        <form @submit.prevent class="bg-white p-6 rounded-md md:w-1/2">
+        <form
+          @submit.prevent
+          class="bg-white p-8 rounded-md md:w-1/2 xl:max-w-md xl:p-12"
+        >
           <p class="mb-6 text-2xl font-bold">Get In Touch</p>
           <div class="mb-6">
             <input

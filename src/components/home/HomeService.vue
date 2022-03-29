@@ -11,12 +11,14 @@
       </div>
       <div class="my-12 grid grid-cols-1 md:grid-cols-2">
         <div
-          class="border border-solid border-border p-6"
+          class="border border-solid border-border p-8 2xl:p-14"
           v-for="(card, index) in cards"
           :key="index"
         >
           <div class="flex justify-start items-center space-x-6">
-            <div class="bg-secondary rounded-full p-4">
+            <div
+              class="bg-secondary rounded-full p-4 xl:p-0 xl:h-20 xl:w-20 flex justify-center items-center"
+            >
               <figure>
                 <img
                   :src="require(`@/assets/img/${card.img}`)"
@@ -27,7 +29,9 @@
             </div>
             <h3 class="font-bold text-2xl text-priText">{{ card.title }}</h3>
           </div>
-          <p class="text-secText my-5 leading-8">{{ card.content }}</p>
+          <p class="text-secText my-5 leading-8 xl:max-w-lg">
+            {{ card.content }}
+          </p>
           <div class="flex justify-start items-center space-x-4">
             <small
               class="mdi mdi-plus bg-white shadow-md drop-shadow-md text-secondary py-1.5 px-3 rounded-full text-lg transition duration-200 hover:shadow-lg cursor-pointer"

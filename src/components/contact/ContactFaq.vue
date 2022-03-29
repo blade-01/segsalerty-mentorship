@@ -19,11 +19,11 @@
           <div
             v-for="faq in faqs"
             :key="faq.id"
-            class="border border-solid border-border py-4"
+            class="border border-solid border-border"
             :class="faq.id === selectedId ? 'bg-white' : ''"
           >
             <div
-              class="flex justify-between items-center p-4 cursor-pointer"
+              class="flex justify-between items-center p-10 cursor-pointer"
               @click="selected(faq.id)"
               :class="faq.id === selectedId ? 'text-priText' : ''"
             >
@@ -33,12 +33,20 @@
               <img
                 src="@/assets/img/down.svg"
                 alt="chevron"
-                :class="faq.id === selectedId ? 'transform rotate-180' : ''"
+                :class="
+                  faq.id === selectedId
+                    ? 'transition-all ease-in-out duration-200 transform rotate-180'
+                    : ''
+                "
               />
             </div>
             <div
-              class="h-0 overflow-hidden bg-white px-4"
-              :class="faq.id === selectedId ? 'h-full' : ''"
+              class="h-0 overflow-hidden bg-white px-10"
+              :class="
+                faq.id === selectedId
+                  ? 'h-64 lg:h-28 transition-all ease-in-out duration-200'
+                  : ''
+              "
             >
               <p class="text-secText">{{ faq.answer }}</p>
             </div>

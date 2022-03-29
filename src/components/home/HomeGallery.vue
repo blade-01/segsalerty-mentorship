@@ -1,5 +1,7 @@
 <template>
-  <div class="grid grid-cols-2 md:grid-cols-6 pt-10 bg-secBg">
+  <div
+    class="grid grid-cols-2 md:flex justify-center items-center pt-10 bg-secBg"
+  >
     <div v-for="(image, index) in images" :key="index">
       <img :src="require(`@/assets/img/${image}`)" :alt="image" />
     </div>

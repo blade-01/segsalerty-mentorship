@@ -7,28 +7,30 @@
       >
         What My Clients Are Saying
       </p>
-      <div class="md:flex items-start mt-4 mx-auto">
-        <div
-          v-for="(testimony, index) in testimonials"
-          :key="index"
-          class="border border-solid border-border p-4 md:rounded-md md:w-96 text-left"
-          :class="[index === 1 ? 'bg-white' : '']"
-        >
-          <span
-            v-for="(i, index) in 5"
+      <div class="md:flex justify-center lg:block">
+        <div class="lg:flex justify-center items-start mt-4 mx-auto">
+          <div
+            v-for="(testimony, index) in testimonials"
             :key="index"
-            class="mdi mdi-star text-yellow-400"
-          ></span>
-          <p class="text-secText py-6 leading-8">{{ testimony.comment }}</p>
-          <div class="mt-8 text-priText flex items-center space-x-3">
-            <img
-              :src="require(`@/assets/img/${testimony.src}`)"
-              :alt="testimony.name"
-              class="w-20 h-20"
-            />
-            <div>
-              <p class="text-2xl font-bold">{{ testimony.name }}</p>
-              <p>{{ testimony.org }}</p>
+            class="border border-solid border-border p-8 md:p-10 md:rounded-md md:w-96 text-left"
+            :class="[index === 1 ? 'bg-white' : '']"
+          >
+            <span
+              v-for="(i, index) in 5"
+              :key="index"
+              class="mdi mdi-star text-yellow-400"
+            ></span>
+            <p class="text-secText py-6 leading-8">{{ testimony.comment }}</p>
+            <div class="mt-8 text-priText flex items-center space-x-3">
+              <img
+                :src="require(`@/assets/img/${testimony.src}`)"
+                :alt="testimony.name"
+                class="w-20 h-20"
+              />
+              <div>
+                <p class="text-2xl font-bold">{{ testimony.name }}</p>
+                <p>{{ testimony.org }}</p>
+              </div>
             </div>
           </div>
         </div>
