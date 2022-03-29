@@ -23,7 +23,7 @@ a.route-link.router-link-exact-active {
 }
 @layer components {
   .container {
-    @apply w-11/12 md:w-4/5 lg:w-4/5 2xl:w-8/12 m-auto;
+    @apply w-11/12 md:w-4/5 lg:w-4/5 2xl:max-w-7xl m-auto;
   }
   .routes {
     @apply mt-20;
@@ -71,6 +71,11 @@ a.route-link.router-link-exact-active {
   }
   .height {
     height: calc(100% - 80px);
+  }
+  .work-wrap:nth-child(2) {
+    padding: 0.5rem 0;
+    border-top: solid 1px #3a3c56;
+    border-bottom: solid 1px #3a3c56;
   }
   .work-01 {
     background: url("./assets/img/work-01.svg") no-repeat center center;
@@ -141,17 +146,24 @@ a.route-link.router-link-exact-active {
   }
   @screen md {
     .height {
-      height: calc(100% - 80px);
+      height: calc(100vh - 80px);
     }
     .founder {
       background: url("./assets/img/apostrophe.svg") no-repeat top 10px right
         100px;
     }
+    .work-wrap:nth-child(2) {
+      padding: 0 0.5rem;
+      border-top: none;
+      border-bottom: none;
+      border-right: solid 1px #3a3c56;
+      border-left: solid 1px #3a3c56;
+    }
+  }
+  .work {
+    height: 438px;
   }
   @screen lg {
-    .height {
-      height: calc(100vh - 80px);
-    }
     .blogs {
       grid-template-areas:
         "blog-1 blog-1 blog-2"
@@ -172,6 +184,9 @@ a.route-link.router-link-exact-active {
     }
     .blog-3 {
       grid-area: blog-3 !important;
+    }
+    .work {
+      height: 576px;
     }
   }
 }

@@ -1,12 +1,12 @@
 <template>
   <div
-    class="bg-map bg-no-repeat bg-center bg-cover py-16 text-priText relative"
+    class="bg-map bg-no-repeat bg-center bg-cover py-32 text-priText relative"
   >
     <div class="container">
       <div class="md:flex justify-between items-center space-x-5">
         <form
           @submit.prevent
-          class="bg-white p-6 rounded-md md:w-1/2 mb-72 md:mb-0"
+          class="bg-white p-8 rounded-md md:w-1/2 xl:max-w-md xl:p-12 mb-72 md:mb-0"
         >
           <p class="mb-6 text-2xl font-bold">Get In Touch</p>
           <div class="mb-6">

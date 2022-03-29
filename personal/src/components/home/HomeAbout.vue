@@ -1,21 +1,23 @@
 <template>
   <div class="flex py-16 bg-secBg">
     <div class="container">
-      <div class="flex justify-between items-center flex-col md:flex-row gap-4">
-        <div class="illus mb-8 md:mb-0 md:max-w-lg">
+      <div
+        class="flex justify-between items-center flex-col md:flex-row md:space-x-12"
+      >
+        <div class="illus mb-8 md:mb-0 md:w-1/2 xl:max-w-xl">
           <figure>
             <img src="@/assets/img/illus-02.svg" alt="illustration_02" />
           </figure>
         </div>
-        <div>
+        <div class="md:w-1/2 xl:max-w-lg">
           <p class="tag">Gabriel Pires</p>
           <h5
-            class="my-6 font-bold text-5xl leading-snug text-priText lg:max-w-sm mx-0"
+            class="my-6 font-bold text-5xl md:text-4xl lg:text-5xl leading-snug text-priText lg:max-w-sm mx-0"
           >
             Professional Web Designer
           </h5>
           <p class="text-priText text-xl mb-3">Provides a full service range</p>
-          <p class="max-w-md leading-8 text-secText">
+          <p class="leading-8 text-secText xl:max-w-md">
             Ability to put themselves in the merchant's shoes. It is meant to
             partner on the long run, and work as an extension of the merchant's
             team.
@@ -29,17 +31,19 @@
       </div>
       <div class="my-12 grid grid-cols-1 md:grid-cols-2 mt-28">
         <div
-          class="border border-solid border-border p-8"
+          class="border border-solid border-border p-8 sm:p-10"
           v-for="(about, index) in abouts"
           :key="index"
         >
           <div class="flex justify-start items-center space-x-6">
-            <div class="bg-secondary rounded-full p-4">
+            <div
+              class="bg-secondary rounded-full p-4 xl:p-0 xl:h-28 xl:w-28 flex justify-center items-center"
+            >
               <figure>
                 <img
                   :src="require(`@/assets/img/${about.img}`)"
                   :alt="about.title"
-                  class="h-8 w-8"
+                  class="h-10 w-10 xl:h-12 xl:w-12"
                 />
               </figure>
             </div>

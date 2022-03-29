@@ -8,12 +8,14 @@
           :key="index"
         >
           <div class="flex justify-start items-center space-x-6">
-            <div class="bg-secondary rounded-full p-3">
+            <div
+              class="bg-secondary rounded-full p-3 lg:p-0 lg:w-16 lg:h-16 flex justify-center items-center"
+            >
               <figure>
                 <img
                   :src="require(`@/assets/img/${card.img}`)"
                   :alt="card.title"
-                  class="h-4 w-4"
+                  class="h-4 w-4 lg:w-6 lg:h-6"
                 />
               </figure>
             </div>

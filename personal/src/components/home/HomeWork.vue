@@ -12,13 +12,12 @@
           Explore More
         </button>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-16">
-        <div
-          class="card-height relative"
-          :class="work.src"
-          v-for="(work, index) in works"
-          :key="index"
-        >
+    </div>
+    <div
+      class="grid grid-cols-1 md:grid-cols-3 gap-3 2xl:gap-0 mt-16 w-11/12 md:max-w-screen-2xl m-auto py-4 border-solid border-t border-b border-darkBorder"
+    >
+      <div v-for="(work, index) in works" :key="index" class="work-wrap">
+        <div class="work relative" :class="work.src">
           <div class="absolute bottom-6 left-align">
             <p
               class="bg-white text-priText rounded-3xl inline-block py-2 px-3 mb-4"
